@@ -27,6 +27,23 @@
     }
 
     /*
+     Takes url, pageTitle, text, fileId as input and makes files in output directory in following format:
+        - Name : data-fileId.txt
+        - 1st line of each file is URL:url of the page from where the data is collected
+        - 2nd line of each file is the Title:title of the page from where the data is collected
+    */ 
+    function saveToFile($url, $pageTitle, $textNodes, $fileId){
+        $textData = "";
+        $textData.="URL:" . $url . "\n";
+        $textData.="Title:" . $pageTitle;
+        foreach ($textNodes as $node) {
+            $textData .= $node->nodeValue . "\n";
+        }
+        $filename = 'output/data-'. ($fileId) . '.txt';
+        file_put_contents($filename, $textData);
+    }
+
+    /*
      Function that takes a full webpage content as input and returns a array having pageTitle, text 
      of that page and a object of DOMDocument that parses HTML
     */ 
@@ -50,6 +67,35 @@
         return [$pageTitle,$textNodes,$dom];
     }
 
+    /*
+     Functions that checks whether the url given to it is allowed by robots.txt file of that website
+     returns true if the path specified is allowed and false if the path specified is not allowed
+    */ 
+    function isAllowedByRobotsTxt($url) {
+    $robotsUrl = parse_url($url);
+    $robotsUrl['path'] = '/robots.txt';
+    $robotsTxtUrl = $robotsUrl['scheme'] . '://' . $robotsUrl['host'] . (isset($robotsUrl['port']) ? ':' . $robotsUrl['port'] : '') . $robotsUrl['path'];
+    $robotsContent = @file_get_contents($robotsTxtUrl);
+
+    // If robots.txt file doesnot exist we assume it is allowed
+    if ($robotsContent === false) {
+        return true;
+    }
+
+    // Parse the robots.txt content and check if the URL is allowed
+    $robotsRules = explode("\n", $robotsContent);
+    foreach ($robotsRules as $rule) {
+        if (strpos($rule, 'Disallow:') !== false) {
+            $disallowedPath = trim(str_replace('Disallow:', '', $rule));
+            $disallowedUrl = $robotsUrl['scheme'] . '://' . $robotsUrl['host'] . (isset($robotsUrl['port']) ? ':' . $robotsUrl['port'] : '') . $disallowedPath;
+
+            if (strpos($url, $disallowedUrl) === 0) {
+                return false; 
+            }
+        }
+    }
+    return true; 
+}
     
     /*
      A resursive function that takes depth as input and start crawling the seedURL and has a base 
@@ -63,27 +109,32 @@
         // Base Case
         if($depth == 0){
             // Getting contents of a specified url, thus sending a request to that URL
-            $content = file_get_contents($seedURL);
-            if($content !== false){
-                $pageTitleAndText = getTitleAndText($content);
-                $pageTitle = $pageTitleAndText[0];
-                $textNodes = $pageTitleAndText[1];
-                return;
-            }    
-            
+            if(isAllowedByRobotsTxt($seedURL)){
+                $content = file_get_contents($seedURL);
+                if($content !== false){
+                    $pageTitleAndText = getTitleAndText($content);
+                    $pageTitle = $pageTitleAndText[0];
+                    $textNodes = $pageTitleAndText[1];
+                    $fileId += 1;
+                    saveToFile($seedURL, $pageTitle, $textNodes, $fileId);
+                    return;
+                }    
+            }
         }
 
         // Array to hold the url's from the current page
         $urlFetched = [];
 
         foreach($urlQueue as $url){
-            if(isValidURL($url)){
+            if(isValidURL($url) && isAllowedByRobotsTxt($url)){
                 $content = file_get_contents($url);
 
                 if ($content !== false) {
                     $pageTitleAndText = getTitleAndText($content);
                     $pageTitle = $pageTitleAndText[0];
                     $textNodes = $pageTitleAndText[1];
+                    $fileId += 1;
+                    saveToFile($url, $pageTitle, $textNodes, $fileId);
                     
                     $dom = $pageTitleAndText[2];
                     // Get all anchor tags of the current page 
