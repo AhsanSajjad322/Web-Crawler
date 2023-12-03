@@ -4,7 +4,7 @@
 Following are the steps to run this web crawler
 1) First download this repository or else clone it in the folder that is placed in htdocs folder of xampp files, where you installed the xampp.
 
-### To clone it write command : 
+2) ### To clone it write command : 
     git clone https://github.com/AhsanSajjad322/Web-Crawler.git
 
 Note : If you download then, the downloaded repository must be placed in htdocs folder of xampp files. 
