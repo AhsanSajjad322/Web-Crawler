@@ -2,15 +2,15 @@
 
 # How to setup
 Following are the steps to run this web crawler
-1)First download this repository or else clone it in the folder that is placed in htdocs folder of xampp files, where you installed the xampp.
+1) First download this repository or else clone it in the folder that is placed in htdocs folder of xampp files, where you installed the xampp.
 
-###To clone it write command : 
+### To clone it write command : 
     git clone https://github.com/AhsanSajjad322/Web-Crawler.git
 
 Note : If you download then, the downloaded repository must be placed in htdocs folder of xampp files. 
 
-3)Then start Apache server from xampp control panel.
-2)Then write http://localhost/directoryName/Web-Crawler-main/Web-Crawler-main/index.php in web browser to run the Web Crawler index.php file.
+3) Then start Apache server from xampp control panel.
+2) Then write http://localhost/directoryName/Web-Crawler-main/Web-Crawler-main/index.php in web browser to run the Web Crawler index.php file.
 
 Note : The directoryName should be the name of folder in which you placed code in htdocs directory. If directory placed the downloaded repository in htdocs folder, then write this in web browser: http://localhost/Web-Crawler-main/Web-Crawler-main/index.php
 
