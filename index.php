@@ -44,7 +44,46 @@
                 }
             }
 
-            
+            /*
+             Handles the GET request by the form with search input field settled
+             If so then run the search file to search for the text specified 
+            */
+            if ($_SERVER["REQUEST_METHOD"] == "GET") {
+                if (isset($_GET['search'])) {
+                    $searchURLArray = [];
+                    $toSearchData = $_GET['search'];
+
+                    include 'search.php';
+                    $searchedData = searchModule($toSearchData);
+                    if(!$searchedData){
+                        echo "<p>No Data Found</p>";
+                        return;
+                    }
+                    /*
+                     Displaying Searched Data on Screen in a specified format such that the page title
+                     from which the data in found on top which is a hyperlink to then original page and
+                     then the Line No's with text, specifying the lines in which the search result is 
+                     found in that file.
+                    */ 
+                    echo "<ul>";
+                    foreach($searchedData as $result){
+                        $url = $result['url'];
+                        if(!in_array($url,$searchURLArray)){
+                            array_push($searchURLArray, $url);
+                            $title = $result['title'];
+                            echo "<h3><a href=$url>$title</a></h3>";
+                        }
+                        $lineContent = $result['lineContent'];
+                        $lineNumber = $result['lineNumber'];
+
+                        echo "<li><b>Line $lineNumber</b> : $lineContent </li>"; 
+                    }
+                    echo "</ul>";
+
+                } else {
+                    echo "No search parameter provided.";
+                }
+            }
         ?>
     </section>
     
