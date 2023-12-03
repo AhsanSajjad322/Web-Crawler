@@ -59,3 +59,7 @@ This files holds the main logic of crawling a url. It has following functions:
 * Robots.txt Compliance - a function in crawler.php files deals with these rules of the website.
 * Error Handling - It is achieved using libxml_clear_errors of DOMDocument and also by validating URL's. 
 * Filtering - The crawler functions holds a logic that when crawling url's in a specified page, and url in anchor tag is encountered that belongs to some other website(hostname), a scheme is defined to not include that url in urlQueue.
+
+# Search Engine Interface
+![search engine image](/WebCrawler/Web-Crawler/images/image.png)
+![search engine image](/WebCrawler/Web-Crawler/images/image2.png)
