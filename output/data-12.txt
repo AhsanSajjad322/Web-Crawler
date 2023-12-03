@@ -1,0 +1,102 @@
+URL:https://www.vox.com/scotus/2023/11/29/23980966/supreme-court-sec-jarkesy-administrative-law-judges
+Title:The Supreme Court seems eager to protect hedge fund managers, in SEC v. Jarkesy - VoxGive
+Newsletters
+Site search
+Vox main menu
+Filed under:
+The Supreme Court seeks a middle path between following the law and blowing up the government
+SEC v. Jarkesy is still likely to end in a 6-3 decision against the federal government. But it probably won’t be a catastrophic loss.
+Share this story
+Last year, the far-right United States Court of Appeals for the Fifth Circuit handed down a breathtaking decision that would have hobbled the Securities and Exchange Commission (SEC), the New Deal-era agency tasked with protecting investors from fraud, and destroyed much of the federal government’s ability to function in the process. Parts of the Fifth Circuit’s decision also could have potentially bolstered former President Donald Trump’s plans to replace much of the federal civil service with MAGA loyalists if reelected.
+The good news, if you care about functioning government and liberal democracy, is that the Supreme Court, which heard arguments in this case on Wednesday morning, appears unlikely to go anywhere near as far as the Fifth Circuit. Wednesday’s arguments in this case, known as SEC v. Jarkesy, focused entirely on a relatively narrow issue: whether defendants in enforcement proceedings brought by the SEC are entitled to a jury trial. 
+One of the Fifth Circuit’s most aggressive arguments, that a largely defunct legal doctrine known as “nondelegation” potentially strips federal agencies of much of their authority to make discretionary decisions, hardly came up. And another Fifth Circuit argument, the one which could have given a potential second Trump administration broad new authority to fill the government with his loyalists, was barely mentioned at all.
+Which is not to say that the Court’s ultimate decision in Jarkesy will end well for the SEC. The Court appears likely to hand down a 6-3 decision, along party lines, that will weaken the SEC’s power to protect investors. And the Court’s decision is likely to diminish the government’s ability to try complex cases involving highly technical areas of the law — such as securities fraud cases — in specialized forums presided over by experts in those areas of the law.
+But even the Court’s GOP-appointed majority appeared uninterested in the kind of sweeping, society-restructuring attack on US state capacity contemplated by the Fifth Circuit. The bottom line is that the federal government is likely to lose some of its ability to try certain cases before expert judges, but that Jarkesy is unlikely to end in catastrophe.
+George Jarkesy is a Republican activist and host of a conservative radio show. He also ran a pair of hedge funds. The SEC determined that these funds misled their investors — among other things, the government accuses these funds of “arbitrarily inflating the value of certain holdings from $0.30 per share to $3.30 per share — so that they could charge higher management fees” — and a specialized jurist known as an “administrative law judge” determined that Jarkesy did, indeed, violate federal securities law.
+This administrative law judge ordered Jarkesy to pay a civil penalty of $300,000, and to “disgorge nearly $685,000 in illicit gains.”
+Jarkesy’s Supreme Court case attacks the SEC’s decision to bring this case before an administrative law judge, rather than in a federal district court, where the case would be heard by a more generalist official known as an “Article III” judge.
+There are several important differences between administrative law judges and Article III judges. The latter kind of judges are political appointees who are nominated by the president and confirmed by the Senate — and thus are often chosen because they will hew to a particular partisan agenda. Article III judges also serve for life. And they are members of an entirely separate branch of government from Congress and the president (“Article III” refers to Article III of the Constitution, which creates the federal judicial branch).
+Administrative law judges, by contrast, are typically in-house at the agencies that bring cases before them. Unlike Article III judges, they are not political appointees, but instead are civil servants appointed through a merit selection process — so they are less likely to be partisans than their Article III counterparts. And they enjoy robust job security to prevent political officials within their agency from using the threat of firing to influence administrative law judges’ decisions.
+Administrative law judges also tend to specialize in a narrow area of the law. The SEC’s in-house judges focus on the kinds of securities fraud and similar cases that are handled by the SEC, and thus have a significant amount of expertise in this complicated area of the law. Article III judges, by contrast, hear a wide array of cases arising under all areas of federal and state law. So they may not be familiar with securities law if an SEC case comes before them.
+And there’s one other very important difference between the two forums. Litigants in Article III courts typically can demand a trial by jury. Administrative law judges, by contrast, typically do not use juries. Indeed, a jury would defeat one of the primary advantages of an administrative forum: the ability to have the case resolved by a subject-matter expert.
+Oral arguments in Jarkesy focused almost entirely on whether the Seventh Amendment, which provides that “in suits at common law ... the right of trial by jury shall be preserved,” prohibits the SEC from bringing enforcement actions before an administrative forum that does not use a jury.
+Under the Supreme Court’s decision in Atlas Roofing v. OSHA (1979), the answer to this question is “no”; as Justice Kentanji Brown Jackson noted during arguments Wednesday, “Atlas Roofing resolves this case.”
+The key words in the Seventh Amendment are “in suits at common law,” which refer to a body of judge-created law that developed over many centuries in English (and later in American) courts. Atlas Roofing held that the Seventh Amendment does not apply to “cases in which the Government sues in its sovereign capacity to enforce public rights created by statutes within the power of Congress to enact.” Cases that arise out of a federal statute, after all, are typically not “suits at common law.”
+Jarkesy was accused by the SEC of violating an act of Congress, not of violating some common law principle. And the case against him was brought by the federal government “in its sovereign capacity.”
+But all six of the Court’s Republican appointees appeared uncomfortable with this solution, and eager, if not to overrule Atlas Roofing entirely, at least to limit it in a way that would require cases like Mr. Jarkesy’s to be resolved in an Article III court.
+Early in Wednesday’s argument, Justice Neil Gorsuch set a tone that animated much of the six Republican appointees’ questioning. The right to a jury trial, he said, is a “very important foundational freedom.” And he suggested that there’s something quite odd about the government getting to decide whether to bring a case in a forum that allows for jury trials.
+Few figures in American history, however, have less credibility to speak about the importance of the right to a jury trial, as Gorsuch’s very first major Supreme Court opinion was a direct attack on that right. In Epic Systems v. Lewis (2018), Gorsuch wrote for the Court’s Republican majority that employers have a right to force their employees to sign away their right to sue them in any court at all — including courts that protect the right to a jury trial — and to shunt those cases into private arbitration.
+Indeed, the Court’s GOP-appointed majority has long been vocal advocates of forced arbitration, dismissing arguments that these privatized forums violate the Seventh Amendment, and often mangling the text of federal statutes to maximize employers’ power to avoid jury trials.
+So why is the Court’s right flank suddenly so concerned that unscrupulous hedge fund managers might not get to present their case to a jury? The most likely answer is that the six Republican appointees have sought to centralize power within the Article III courts, often at the expense of federal agencies supervised by the president. The Supreme Court’s recent “major questions doctrine” cases, for example, have given the justices a virtually unlimited veto power over any policy enacted by a federal agency that a majority of the Court does not like.
+Chief Justice John Roberts, in particular, was quite explicit during the Jarkesy argument about his belief that federal agencies are too powerful, and that much of this power should be transferred to him and his fellow Article III judges. The Atlas Roofing decision, he noted, is 50 years old, and he argued that the role of federal agencies has become “enormously more significant” in that time.
+Roberts also characterized administrative law judges — who, again, are in-house at various federal agencies, but also enjoy robust job protections to insulate them from political pressure — as the executive branch’s “own employees.” His implication appeared to be that Jarkesy’s Seventh Amendment argument is as good of a reason as any to shift power away from these administrative law judges, and towards the Article III branch that Roberts leads.
+That said, Roberts and some of his fellow Republican appointees also appeared to cast about for a way to rule in Jarkesy’s favor, without completely upending the government’s ability to resolve cases in administrative forums. 
+The federal government employs nearly 2,000 administrative law judges, in addition to about 650 non-Article III judges who hear immigration cases. Meanwhile, there are fewer than 900 Article III judges authorized by law. So, if the United States suddenly loses its ability to bring cases in administrative forums, the entire federal system will lose the overwhelming majority of its capacity to adjudicate cases — forcing litigants to wait years before an Article III judge has the time to take up their case.
+In a colloquy with Roberts, Michael McColloch, the lawyer representing Jarkesy, proposed several areas that could still be litigated in administrative forums, including many tax cases, immigration cases, disputes about Social Security benefits, and cases involving small “traffic ticket-level fines.”
+Meanwhile, both Gorsuch and Justice Brett Kavanaugh suggested drawing a line between cases where the government seeks to impose a “penalty” on a defendant, and cases about whether a particular individual is entitled to a federal benefit. That would require most SEC enforcement actions to be heard by an Article III court that can conduct a jury trial, but would also allow the Social Security Administration’s more than 1,600 administrative law judges to continue to determine who is entitled to federal benefits.
+In any event, the bottom line is that Jarkesy appears likely to prevail. And the Court’s GOP-appointed majority appears likely to send his case to an Article III court where Jarkesy can receive a jury trial. The Seventh Amendment, it appears, protects hedge fund managers, but not workers.
+But, while that result is unlikely to satisfy anyone who does not share Neil Gorsuch’s political views, it would also be a relatively minor attack on the federal government’s ability to enforce the law — and a much less severe attack on US state capacity than the Fifth Circuit’s decision.
+Will you support Vox’s explanatory journalism?
+
+      Most news outlets make their money through advertising or subscriptions. But when it comes to what we’re trying to do at Vox, there are a couple of big issues with relying on ads and subscriptions to keep the lights on:
+
+
+First, advertising dollars go up and down with the economy. We often only know a few months out what our advertising revenue will be, which makes it hard to plan ahead.
+
+
+Second, we’re not in the subscriptions business. Vox is here to help everyone understand the complex issues shaping the world — not just the people who can afford to pay for a subscription. We believe that’s an important part of building a more equal society. And we can’t do that if we have a paywall. 
+ 
+
+So even though advertising is still our biggest source of revenue, we also seek grants and reader support. (And no matter how our work is funded, we have strict guidelines on editorial independence.)
+
+
+If you also believe that everyone deserves access to trusted high-quality information, will you make a gift to Vox today? Any amount helps. 
+    
+
+                  $5/month
+                
+
+                  $10/month
+                
+
+                  $25/month
+                
+
+                  $50/month
+                
+
+              
+                We accept credit card, Apple Pay, and
+              
+              
+                Google Pay. You can also contribute via
+              
+            
+
+    Next Up In
+    
+        Supreme Court 
+    
+  
+
+      
+        Sign up for the
+        
+          newsletter
+        
+      
+      Sentences
+    
+The day's most important news stories, explained in your inbox.
+Check your inbox for a welcome email.
+Oops. Something went wrong. Please enter a valid email and try again.
+
+      
+      The Latest
+    
+Israel moves into southern Gaza after a week-long truce — and its goals are murkier than ever
+Israeli settler violence against Palestinians in the West Bank, briefly explained 
+The first results from the world’s biggest basic income experiment
+George Santos’s messy expulsion vote, briefly explained
+Netflix’s Squid Game reality show is kinda great. Oh no. 
+How Israel fractured the left and united the right 

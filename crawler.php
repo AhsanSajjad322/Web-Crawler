@@ -71,31 +71,32 @@
      Functions that checks whether the url given to it is allowed by robots.txt file of that website
      returns true if the path specified is allowed and false if the path specified is not allowed
     */ 
-    function isAllowedByRobotsTxt($url) {
-    $robotsUrl = parse_url($url);
-    $robotsUrl['path'] = '/robots.txt';
-    $robotsTxtUrl = $robotsUrl['scheme'] . '://' . $robotsUrl['host'] . (isset($robotsUrl['port']) ? ':' . $robotsUrl['port'] : '') . $robotsUrl['path'];
-    $robotsContent = @file_get_contents($robotsTxtUrl);
+    function isNotAllowedByRobotsTxt($url) {
+        $robotsUrl = parse_url($url);
+        $robotsUrl['path'] = '/robots.txt';
+        $robotsTxtUrl = $robotsUrl['scheme'] . '://' . $robotsUrl['host'] . (isset($robotsUrl['port']) ? ':' . $robotsUrl['port'] : '') . $robotsUrl['path'];
+        $robotsContent = @file_get_contents($robotsTxtUrl);
 
-    // If robots.txt file doesnot exist we assume it is allowed
-    if ($robotsContent === false) {
-        return true;
-    }
+        // If robots.txt file doesnot exist we assume it is allowed
+        if ($robotsContent === false) {
+            return true;
+        }
 
-    // Parse the robots.txt content and check if the URL is allowed
-    $robotsRules = explode("\n", $robotsContent);
-    foreach ($robotsRules as $rule) {
-        if (strpos($rule, 'Disallow:') !== false) {
-            $disallowedPath = trim(str_replace('Disallow:', '', $rule));
-            $disallowedUrl = $robotsUrl['scheme'] . '://' . $robotsUrl['host'] . (isset($robotsUrl['port']) ? ':' . $robotsUrl['port'] : '') . $disallowedPath;
+        // Parse the robots.txt content and check if the URL is allowed
+        $robotsRules = explode("\n", $robotsContent);
+        foreach ($robotsRules as $rule) {
+            if (strpos($rule, 'Disallow:') !== false) {
+                $disallowedPath = trim(str_replace('Disallow:', '', $rule));
+                $disallowedUrl = $robotsUrl['scheme'] . '://' . $robotsUrl['host'] . (isset($robotsUrl['port']) ? ':' . $robotsUrl['port'] : '') . $disallowedPath;
 
-            if (strpos($url, $disallowedUrl) === 0) {
-                return false; 
+                if (strpos($url, $disallowedUrl) === 0) {
+                    return false; 
+                }
             }
         }
+
+        return true; 
     }
-    return true; 
-}
     
     /*
      A resursive function that takes depth as input and start crawling the seedURL and has a base 
@@ -109,7 +110,7 @@
         // Base Case
         if($depth == 0){
             // Getting contents of a specified url, thus sending a request to that URL
-            if(isAllowedByRobotsTxt($seedURL)){
+            if(!isNotAllowedByRobotsTxt($seedURL)){
                 $content = file_get_contents($seedURL);
                 if($content !== false){
                     $pageTitleAndText = getTitleAndText($content);
@@ -126,7 +127,7 @@
         $urlFetched = [];
 
         foreach($urlQueue as $url){
-            if(isValidURL($url) && isAllowedByRobotsTxt($url)){
+            if(isValidURL($url) && !isNotAllowedByRobotsTxt($url)){
                 $content = file_get_contents($url);
 
                 if ($content !== false) {
@@ -171,7 +172,7 @@
         // recursive step
         return crawl($depth - 1);
     }
-    
+
     // call to crawl function
     crawl($depth);
 ?>
